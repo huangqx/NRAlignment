@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Rendering\camera_container.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\color_container.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="console.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\display.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\light.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\light_container.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionView.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="NRAlignment.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="NRAlignmentDoc.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="NRAlignmentView.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\primitive_rendering.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\scene.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\io_helper.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStructures\bounding_box.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStructures\data_container.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStructures\point_cloud.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStructures\surface.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStructures\triangle_mesh.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearAlgebra\dynamic_linear_algebra.cpp">
+      <Filter>LinearAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearAlgebra\linear_algebra.cpp">
+      <Filter>LinearAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStructures\patch_container.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearAlgebra\affine_transformation.cpp">
+      <Filter>LinearAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStructures\opt_struct_container.cpp">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearAlgebra\moment.cpp">
+      <Filter>LinearAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\scan_io.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\PLY\rply.cpp">
+      <Filter>ThirdParty\PLY</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\EditTree\EditTreeCtrl.cpp">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\EditTree\EditTreeCtrlEx.cpp">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\EditTree\SortHeaderCtrl.cpp">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\EditTree\SortListCtrl.cpp">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\Mgc\MgcEigen.cpp">
+      <Filter>ThirdParty\Mgc</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\helper_functions.cpp">
+      <Filter>Operations</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\ANN.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\bd_fix_rad_search.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\bd_pr_search.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\bd_search.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\bd_tree.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\brute.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\kd_dump.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\kd_fix_rad_search.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\kd_pr_search.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\kd_search.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\kd_split.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\kd_tree.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\kd_util.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\ANN\perf.cpp">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\PairwiseNonRigid\pairwise_non_rigid_align.cpp">
+      <Filter>Operations\PairwiseNonRigid</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\NonRigid\gauss_newton_optimizer.cpp">
+      <Filter>Operations\NonRigid</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\NonRigid\init_opt_struct.cpp">
+      <Filter>Operations\NonRigid</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\NonRigid\octree.cpp">
+      <Filter>Operations\NonRigid</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\NonRigid\patch_generator.cpp">
+      <Filter>Operations\NonRigid</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\NonRigid\target_point_generator.cpp">
+      <Filter>Operations\NonRigid</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\Rigid\multile_rigid_alignment.cpp">
+      <Filter>Operations\Rigid</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation\Rigid\pairwise_rigid_alignment.cpp">
+      <Filter>Operations\Rigid</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rendering\color_container.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\camera_container.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="console.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\display.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\light.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\light_container.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionView.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NRAlignment.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NRAlignmentDoc.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NRAlignmentView.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\primitive_rendering.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\scene.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\io_helper.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStructures\bounding_box.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStructures\data_container.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStructures\point_cloud.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStructures\surface.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStructures\triangle_mesh.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAlgebra\dynamic_linear_algebra.h">
+      <Filter>LinearAlgebra</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAlgebra\dynamic_linear_algebra_templcode.h">
+      <Filter>LinearAlgebra</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAlgebra\linear_algebra.h">
+      <Filter>LinearAlgebra</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAlgebra\linear_algebra_templcode.h">
+      <Filter>LinearAlgebra</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStructures\patch_container.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAlgebra\affine_transformation.h">
+      <Filter>LinearAlgebra</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAlgebra\affine_transformation_templcode.h">
+      <Filter>LinearAlgebra</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStructures\opt_struct_container.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAlgebra\moment.h">
+      <Filter>LinearAlgebra</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearAlgebra\moment_templcode.h">
+      <Filter>LinearAlgebra</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\scan_io.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\ANN.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\ANNperf.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\ANNx.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\PLY\rply.h">
+      <Filter>ThirdParty\PLY</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\PLY\rply_templcode.h">
+      <Filter>ThirdParty\PLY</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\EditTree\CursorDef.h">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\EditTree\EditTreeCtrl.h">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\EditTree\EditTreeCtrlEx.h">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\EditTree\SortHeaderCtrl.h">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\EditTree\SortListCtrl.h">
+      <Filter>ThirdParty\EditTree</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Mgc\MagicFMLibType.h">
+      <Filter>ThirdParty\Mgc</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Mgc\MgcEigen.h">
+      <Filter>ThirdParty\Mgc</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Mgc\MgcRTLib.h">
+      <Filter>ThirdParty\Mgc</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\helper_functions.h">
+      <Filter>Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\bd_tree.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\kd_fix_rad_search.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\kd_pr_search.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\kd_search.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\kd_split.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\kd_tree.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\kd_util.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\pr_queue.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\ANN\pr_queue_k.h">
+      <Filter>ThirdParty\ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\PairwiseNonRigid\pairwise_non_rigid_align.h">
+      <Filter>Operations\PairwiseNonRigid</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\NonRigid\gauss_newton_optimizer.h">
+      <Filter>Operations\NonRigid</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\NonRigid\init_opt_struct.h">
+      <Filter>Operations\NonRigid</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\NonRigid\octree.h">
+      <Filter>Operations\NonRigid</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\NonRigid\patch_generator.h">
+      <Filter>Operations\NonRigid</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\NonRigid\target_point_generator.h">
+      <Filter>Operations\NonRigid</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\Rigid\multile_rigid_alignment.h">
+      <Filter>Operations\Rigid</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation\Rigid\pairwise_rigid_alignment.h">
+      <Filter>Operations\Rigid</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\NRAlignment.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\NRAlignmentDoc.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\NRAlignment.rc2">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="ReadMe.txt">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="ThirdParty\Mgc\MgcEigen.inl">
+      <Filter>ThirdParty\Mgc</Filter>
+    </None>
+    <None Include="res\icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{b8dc25a8-8efc-4e73-b772-79389ebe7b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Operations">
+      <UniqueIdentifier>{805fc5fb-b57d-4826-901e-cc61f557300f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LinearAlgebra">
+      <UniqueIdentifier>{6b85a170-e66b-438e-bbc9-5b8a72978af1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{6ffa85f8-b650-43d4-b390-613b81b98d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFiles">
+      <UniqueIdentifier>{214b7245-7e60-44d3-9569-a3f62dc01b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{2021911a-3eb1-4022-bb01-e653924e75be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{193d2ab2-241d-447d-bd47-94f726f27dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{1257b985-8fb2-41ab-a279-6dd6e7e08fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\ANN">
+      <UniqueIdentifier>{e18b6c11-36f2-4585-a717-eb8f8040f2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\PLY">
+      <UniqueIdentifier>{90a4bd0d-8cef-42f8-8aea-37147716558d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\EditTree">
+      <UniqueIdentifier>{3a9f2adb-5013-4c03-8c98-b0a132ad21c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\Mgc">
+      <UniqueIdentifier>{81758564-58e4-4ff4-bcbc-b480eb49da89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Operations\PairwiseNonRigid">
+      <UniqueIdentifier>{7f8d5c40-2bac-4c58-9323-b8cceee88fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Operations\NonRigid">
+      <UniqueIdentifier>{ef760dc0-9086-4781-8523-faffdb76c504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Operations\Rigid">
+      <UniqueIdentifier>{237ee86b-37b2-4437-b75b-f25a27b45b65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NRAlignment.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

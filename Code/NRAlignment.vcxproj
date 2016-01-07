@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4619F73F-D99A-45B8-95CD-1602D9D530E0}</ProjectGuid>
+    <RootNamespace>NRAlignment</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\NRAlignment;..\NRAlignment\BasicStructures;..\NRAlignment\IO;..\NRAlignment\LinearAlgebra;..\NRAlignment\Rendering;..\NRAlignment\Operation;..\NRAlignment\Operation\Rigid;..\NRAlignment\Operation\PairwiseNonRigid;..\NRAlignment\Operation\NonRigid;..\NRAlignment\Operation\MeshReconstruction;..\NRAlignment\ThirdParty;..\NRAlignment\ThirdParty\PLY;..\NRAlignment\ThirdParty\ANN;..\NRAlignment\ThirdParty\EditTree;..\NRAlignment\ThirdParty\Mgc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\NRAlignment;..\NRAlignment\BasicStructures;..\NRAlignment\IO;..\NRAlignment\LinearAlgebra;..\NRAlignment\Rendering;..\NRAlignment\Operation;..\NRAlignment\Operation\Rigid;..\NRAlignment\Operation\PairwiseNonRigid;..\NRAlignment\Operation\NonRigid;..\NRAlignment\Operation\MeshReconstruction;..\NRAlignment\ThirdParty;..\NRAlignment\ThirdParty\PLY;..\NRAlignment\ThirdParty\ANN;..\NRAlignment\ThirdParty\EditTree;..\NRAlignment\ThirdParty\Mgc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicStructures\bounding_box.cpp" />
+    <ClCompile Include="BasicStructures\data_container.cpp" />
+    <ClCompile Include="BasicStructures\opt_struct_container.cpp" />
+    <ClCompile Include="BasicStructures\patch_container.cpp" />
+    <ClCompile Include="BasicStructures\point_cloud.cpp" />
+    <ClCompile Include="BasicStructures\surface.cpp" />
+    <ClCompile Include="BasicStructures\triangle_mesh.cpp" />
+    <ClCompile Include="console.cpp" />
+    <ClCompile Include="IO\io_helper.cpp" />
+    <ClCompile Include="IO\scan_io.cpp" />
+    <ClCompile Include="LinearAlgebra\affine_transformation.cpp" />
+    <ClCompile Include="LinearAlgebra\dynamic_linear_algebra.cpp" />
+    <ClCompile Include="LinearAlgebra\linear_algebra.cpp" />
+    <ClCompile Include="LinearAlgebra\moment.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="NRAlignment.cpp" />
+    <ClCompile Include="NRAlignmentDoc.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\NRAlignment\Operation\Sampling;..\NRAlignment;..\NRAlignment\BasicStructures;..\NRAlignment\BasicStructures\DefGraph;..\NRAlignment\BasicStructures\IO;..\NRAlignment\BasicStructures\LinearAlgebra;..\NRAlignment\NR;..\NRAlignment\BasicStructures\Structure;..\NRAlignment\BasicStructures\Surface;..\NRAlignment\Operation\DeformationOptimization;..\NRAlignment\Operation\DescriptorComputation;..\NRAlignment\Operation\LinearAlgebra;..\NRAlignment\EditTree;..\NRAlignment\Rendering;..\NRAlignment\ThirdParty\Graph;..\NRAlignment\Operation;..\NRAlignment\Operation\DistanceField;..\NRAlignment\Operation\DesignSpace;..\NRAlignment\Operation\DesignSpace\areig\sym;..\NRAlignment\Operation\DesignSpace\matrices\sym;..\NRAlignment\Operation\DesignSpace\arpack;..\NRAlignment\Operation\DeformationField;..\NRAlignment\Operation\Analysis\Graph;..\NRAlignment\Operation\Analysis\Graph\heaps;..\NRAlignment\Operation\Analysis\Graph\heaps_t;..\NRAlignment\Operation\Deformation;..\NRAlignment\BasicStructures\LinearAlgebra\Taucs;..\NRAlignment\ThirdParty;..\NRAlignment\Operation\PanelLayout;..\NRAlignment\Operation\Optimization;..\NRAlignment\ANN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="NRAlignmentView.cpp" />
+    <ClCompile Include="Operation\helper_functions.cpp" />
+    <ClCompile Include="Operation\NonRigid\gauss_newton_optimizer.cpp" />
+    <ClCompile Include="Operation\NonRigid\init_opt_struct.cpp" />
+    <ClCompile Include="Operation\NonRigid\octree.cpp" />
+    <ClCompile Include="Operation\NonRigid\patch_generator.cpp" />
+    <ClCompile Include="Operation\NonRigid\target_point_generator.cpp" />
+    <ClCompile Include="Operation\PairwiseNonRigid\pairwise_non_rigid_align.cpp" />
+    <ClCompile Include="Operation\Rigid\multile_rigid_alignment.cpp" />
+    <ClCompile Include="Operation\Rigid\pairwise_rigid_alignment.cpp" />
+    <ClCompile Include="OptionView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Rendering\camera_container.cpp" />
+    <ClCompile Include="Rendering\color_container.cpp" />
+    <ClCompile Include="Rendering\display.cpp" />
+    <ClCompile Include="Rendering\light.cpp" />
+    <ClCompile Include="Rendering\light_container.cpp" />
+    <ClCompile Include="Rendering\primitive_rendering.cpp" />
+    <ClCompile Include="Rendering\scene.cpp" />
+    <ClCompile Include="ThirdParty\ANN\ANN.cpp" />
+    <ClCompile Include="ThirdParty\ANN\bd_fix_rad_search.cpp" />
+    <ClCompile Include="ThirdParty\ANN\bd_pr_search.cpp" />
+    <ClCompile Include="ThirdParty\ANN\bd_search.cpp" />
+    <ClCompile Include="ThirdParty\ANN\bd_tree.cpp" />
+    <ClCompile Include="ThirdParty\ANN\brute.cpp" />
+    <ClCompile Include="ThirdParty\ANN\kd_dump.cpp" />
+    <ClCompile Include="ThirdParty\ANN\kd_fix_rad_search.cpp" />
+    <ClCompile Include="ThirdParty\ANN\kd_pr_search.cpp" />
+    <ClCompile Include="ThirdParty\ANN\kd_search.cpp" />
+    <ClCompile Include="ThirdParty\ANN\kd_split.cpp" />
+    <ClCompile Include="ThirdParty\ANN\kd_tree.cpp" />
+    <ClCompile Include="ThirdParty\ANN\kd_util.cpp" />
+    <ClCompile Include="ThirdParty\ANN\perf.cpp" />
+    <ClCompile Include="ThirdParty\EditTree\EditTreeCtrl.cpp" />
+    <ClCompile Include="ThirdParty\EditTree\EditTreeCtrlEx.cpp" />
+    <ClCompile Include="ThirdParty\EditTree\SortHeaderCtrl.cpp" />
+    <ClCompile Include="ThirdParty\EditTree\SortListCtrl.cpp" />
+    <ClCompile Include="ThirdParty\Mgc\MgcEigen.cpp" />
+    <ClCompile Include="ThirdParty\PLY\rply.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicStructures\bounding_box.h" />
+    <ClInclude Include="BasicStructures\data_container.h" />
+    <ClInclude Include="BasicStructures\opt_struct_container.h" />
+    <ClInclude Include="BasicStructures\patch_container.h" />
+    <ClInclude Include="BasicStructures\point_cloud.h" />
+    <ClInclude Include="BasicStructures\surface.h" />
+    <ClInclude Include="BasicStructures\triangle_mesh.h" />
+    <ClInclude Include="console.h" />
+    <ClInclude Include="IO\io_helper.h" />
+    <ClInclude Include="IO\scan_io.h" />
+    <ClInclude Include="LinearAlgebra\affine_transformation.h" />
+    <ClInclude Include="LinearAlgebra\affine_transformation_templcode.h" />
+    <ClInclude Include="LinearAlgebra\dynamic_linear_algebra.h" />
+    <ClInclude Include="LinearAlgebra\dynamic_linear_algebra_templcode.h" />
+    <ClInclude Include="LinearAlgebra\linear_algebra.h" />
+    <ClInclude Include="LinearAlgebra\linear_algebra_templcode.h" />
+    <ClInclude Include="LinearAlgebra\moment.h" />
+    <ClInclude Include="LinearAlgebra\moment_templcode.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="NRAlignment.h" />
+    <ClInclude Include="NRAlignmentDoc.h" />
+    <ClInclude Include="NRAlignmentView.h" />
+    <ClInclude Include="Operation\helper_functions.h" />
+    <ClInclude Include="Operation\NonRigid\gauss_newton_optimizer.h" />
+    <ClInclude Include="Operation\NonRigid\init_opt_struct.h" />
+    <ClInclude Include="Operation\NonRigid\octree.h" />
+    <ClInclude Include="Operation\NonRigid\patch_generator.h" />
+    <ClInclude Include="Operation\NonRigid\target_point_generator.h" />
+    <ClInclude Include="Operation\PairwiseNonRigid\pairwise_non_rigid_align.h" />
+    <ClInclude Include="Operation\Rigid\multile_rigid_alignment.h" />
+    <ClInclude Include="Operation\Rigid\pairwise_rigid_alignment.h" />
+    <ClInclude Include="OptionView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Rendering\camera_container.h" />
+    <ClInclude Include="Rendering\color_container.h" />
+    <ClInclude Include="Rendering\display.h" />
+    <ClInclude Include="Rendering\light.h" />
+    <ClInclude Include="Rendering\light_container.h" />
+    <ClInclude Include="Rendering\primitive_rendering.h" />
+    <ClInclude Include="Rendering\scene.h" />
+    <ClInclude Include="ThirdParty\ANN\ANN.h" />
+    <ClInclude Include="ThirdParty\ANN\ANNperf.h" />
+    <ClInclude Include="ThirdParty\ANN\ANNx.h" />
+    <ClInclude Include="ThirdParty\ANN\bd_tree.h" />
+    <ClInclude Include="ThirdParty\ANN\kd_fix_rad_search.h" />
+    <ClInclude Include="ThirdParty\ANN\kd_pr_search.h" />
+    <ClInclude Include="ThirdParty\ANN\kd_search.h" />
+    <ClInclude Include="ThirdParty\ANN\kd_split.h" />
+    <ClInclude Include="ThirdParty\ANN\kd_tree.h" />
+    <ClInclude Include="ThirdParty\ANN\kd_util.h" />
+    <ClInclude Include="ThirdParty\ANN\pr_queue.h" />
+    <ClInclude Include="ThirdParty\ANN\pr_queue_k.h" />
+    <ClInclude Include="ThirdParty\EditTree\CursorDef.h" />
+    <ClInclude Include="ThirdParty\EditTree\EditTreeCtrl.h" />
+    <ClInclude Include="ThirdParty\EditTree\EditTreeCtrlEx.h" />
+    <ClInclude Include="ThirdParty\EditTree\SortHeaderCtrl.h" />
+    <ClInclude Include="ThirdParty\EditTree\SortListCtrl.h" />
+    <ClInclude Include="ThirdParty\Mgc\MagicFMLibType.h" />
+    <ClInclude Include="ThirdParty\Mgc\MgcEigen.h" />
+    <ClInclude Include="ThirdParty\Mgc\MgcRTLib.h" />
+    <ClInclude Include="ThirdParty\PLY\rply.h" />
+    <ClInclude Include="ThirdParty\PLY\rply_templcode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\icon1.ico" />
+    <None Include="res\NRAlignment.ico" />
+    <None Include="res\NRAlignment.rc2" />
+    <None Include="res\NRAlignmentDoc.ico" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="ReadMe.txt" />
+    <None Include="ThirdParty\Mgc\MgcEigen.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NRAlignment.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="NRAlignment.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

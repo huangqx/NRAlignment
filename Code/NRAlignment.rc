@@ -1,0 +1,489 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\NRAlignment.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NRAlignment.ico"
+IDR_NRAlignmentTYPE     ICON                    "res\\NRAlignmentDoc.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 48, 24
+BEGIN
+    BUTTON      ID_FILE_LOADSCANS
+    BUTTON      ID_FILE_ADDSCANS
+    SEPARATOR
+    BUTTON      ID_FILE_LOADBINARYDATA
+    BUTTON      ID_FILE_SAVEBINARYDATA
+    SEPARATOR
+    BUTTON      ID_FILE_SAVEREGISTEREDSCANS
+    BUTTON      ID_FILE_SAVEREFERENCEMODEL
+    SEPARATOR
+    BUTTON      ID_FILE_LOADCAMERA
+    BUTTON      ID_FILE_SAVECAMERA
+    SEPARATOR
+    BUTTON      ID_RENDERINGMODE_TRIANGULARMESH
+    BUTTON      ID_RENDERINGMODE_POINT
+    SEPARATOR
+    BUTTON      ID_VIEW_CURRENTSCAN
+    BUTTON      ID_VIEW_TEXTURE32932
+    BUTTON      ID_VIEW_ALIGNINGERROR
+    SEPARATOR
+    BUTTON      ID_RENDERING_LIGHTING
+    BUTTON      ID_RENDERING_CULLING
+    BUTTON      ID_RENDERING_SMOOTHSHADING
+    SEPARATOR
+    BUTTON      ID_RENDERING_ANTIALIASING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load Scans",                 ID_FILE_LOADSCANS
+        MENUITEM "Add Scans",                   ID_FILE_ADDSCANS
+        MENUITEM SEPARATOR
+        MENUITEM "&Load Binary Data",           ID_FILE_LOADBINARYDATA
+        MENUITEM "&Save Binary Data",           ID_FILE_SAVEBINARYDATA
+        MENUITEM SEPARATOR
+        MENUITEM "&Load Camera",                ID_FILE_LOADCAMERA
+        MENUITEM "&Save Camera",                ID_FILE_SAVECAMERA
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Registered Scans",      ID_FILE_SAVEREGISTEREDSCANS
+        MENUITEM "&Save Reference Model",       ID_FILE_SAVEREFERENCEMODEL
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Sampling",                   ID_VIEW_Sampling
+        MENUITEM "&Test",                       ID_VIEW_TEST
+    END
+    POPUP "&Rendering"
+    BEGIN
+        POPUP "&RenderingMode"
+        BEGIN
+            MENUITEM "&Triangular Mesh",            ID_RENDERINGMODE_TRIANGULARMESH
+            MENUITEM "&Point-set Surface",          ID_RENDERINGMODE_POINT
+        END
+        MENUITEM "&Smooth Shading",             ID_RENDERING_SMOOTHSHADING
+        MENUITEM "&Lighting",                   ID_RENDERING_LIGHTING
+        MENUITEM "&Culling",                    ID_RENDERING_CULLING
+        MENUITEM "&Antialiasing",               ID_RENDERING_ANTIALIASING
+        POPUP "&View"
+        BEGIN
+            MENUITEM "&Original Setting",           ID_VIEW_CURRENTSCAN
+            MENUITEM "&Texture",                    ID_VIEW_TEXTURE32932
+            MENUITEM "&Aligning Error",             ID_VIEW_ALIGNINGERROR
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About NRAlignment...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NRAlignment"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NRAlignment Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_FORMVIEW DIALOGEX 0, 0, 235, 560
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,313,221,240
+    LTEXT           "initGirdRes:",IDC_STATIC,15,184,38,8
+    LTEXT           "finalGridRes:",IDC_STATIC,90,184,42,8
+    LTEXT           "initReguW:",IDC_STATIC,15,207,36,8
+    LTEXT           "finalReguW:",IDC_STATIC,89,207,40,8
+    PUSHBUTTON      "&Execute",IDC_BUTTON_PERFORM_NON_RIGID_ALIGNMENT,170,240,50,14
+    GROUPBOX        "&Rigid Alignment:",IDC_STATIC,7,3,221,72
+    PUSHBUTTON      "&Execute",IDC_BUTTON_PERFORM_RIGID_ALIGNMENT,170,55,50,14
+    LTEXT           "wColor:",IDC_STATIC,20,41,26,8
+    LTEXT           "wPlane:",IDC_STATIC,15,18,26,8
+    LTEXT           "&initCorDis:",IDC_STATIC,80,18,34,8
+    LTEXT           "&finalCorDis:",IDC_STATIC,150,18,38,8
+    LTEXT           "&nSamples:",IDC_STATIC,85,41,34,8
+    LTEXT           "&nLevels:",IDC_STATIC,20,57,28,8
+    EDITTEXT        IDC_EDIT_rigid_weight_color,50,40,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_rigid_initial_average_corr_distance,115,17,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_rigid_FINAL_AVERAGE_CORR_DISTANCE,190,17,30,12,ES_AUTOHSCROLL
+    LTEXT           "&nIters:",IDC_STATIC,85,57,23,8
+    EDITTEXT        IDC_EDIT_rigid_WEIGHT_POINT_2_PLANE_DISTANCE,45,17,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_rigid_NUM_OF_SAMPLES,120,40,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_rigid_NUM_OF_ITERATIONS,120,56,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_rigid_NUM_LEVELS,50,56,28,12,ES_AUTOHSCROLL
+    GROUPBOX        "Almost fixed",IDC_STATIC,10,30,146,42
+    CONTROL         "loop_closure",IDC_CHECK_LOOP_CLOSURE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,40,56,10
+    GROUPBOX        "&Non-Rigid Alignment:",IDC_STATIC,7,170,221,90
+    LTEXT           "&nLevels:",IDC_STATIC,169,184,28,8
+    LTEXT           "&rad_pat:",IDC_STATIC,169,199,29,8
+    GROUPBOX        "&Mesh reconstruction:",IDC_STATIC,7,265,221,40
+    LTEXT           "nIters:",IDC_STATIC,62,241,23,8
+    LTEXT           "color:",IDC_STATIC,15,241,19,8
+    LTEXT           "clusterSize:",IDC_STATIC,88,224,38,8
+    LTEXT           "wPlane:",IDC_STATIC,108,241,26,8
+    LTEXT           "&neighWidth:",IDC_STATIC,15,224,40,8
+    EDITTEXT        IDC_EDIT_NON_RIGID_INITIAL_GRID_RES,56,182,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_FINAL_GRID_RES,132,182,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_NUMBER_GRID_LEVELS,200,182,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_FINAL_REGU_WEIGHT,130,205,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_INITIAL_REGU_WEIGHT,53,205,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_RELATIVE_PATCH_SIZE,200,197,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_NUM_OF_ITERATIONS,86,240,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_WEIGHT_COLOR,36,240,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_WEIGHT_POINT_2_PLANE_DISTANCE,135,240,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_CLUSTER_SIZE,130,222,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NON_RIGID_NEIGHBORHOOD_WIDTH,54,222,28,12,ES_AUTOHSCROLL
+    GROUPBOX        "Almost fixed",IDC_STATIC,10,193,156,62
+    GROUPBOX        "&Pair-wise Alignment:",IDC_STATIC,7,77,221,90
+    PUSHBUTTON      "&Execute",IDC_BUTTON_PERFORM_PAIRWISE_ALIGNMENT,170,148,50,14
+    LTEXT           "nSamples:",IDC_STATIC,85,117,34,8
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_rigid_NUM_OF_SAMPLES,127,115,28,12,ES_AUTOHSCROLL
+    LTEXT           "radPatch:",IDC_STATIC,15,117,32,8
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_RIGID_RELATIVE_PATCH_SIZE,53,115,28,12,ES_AUTOHSCROLL
+    GROUPBOX        "Almost fixed",IDC_STATIC,10,103,150,60
+    LTEXT           "initReguW:",IDC_STATIC,15,132,36,8
+    LTEXT           "finalReguW:",IDC_STATIC,85,132,40,8
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_RIGID_FINAL_REGU_WEIGHT,127,130,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_RIGID_INITIAL_REGU_WEIGHT,53,130,28,12,ES_AUTOHSCROLL
+    LTEXT           "wColor:",IDC_STATIC,165,116,26,8
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_rigid_weight_color,191,114,28,12,ES_AUTOHSCROLL
+    LTEXT           "wPlane:",IDC_STATIC,15,91,26,8
+    LTEXT           "&initCorDis:",IDC_STATIC,79,91,34,8
+    LTEXT           "&finalCorDis:",IDC_STATIC,149,91,38,8
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_rigid_initial_average_corr_distance,115,90,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_rigid_FINAL_AVERAGE_CORR_DISTANCE,189,90,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_rigid_WEIGHT_POINT_2_PLANE_DISTANCE,45,90,28,12,ES_AUTOHSCROLL
+    LTEXT           "&nLevels:",IDC_STATIC,15,146,28,8
+    LTEXT           "&nIters:",IDC_STATIC,85,146,23,8
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_rigid_NUM_OF_ITERATIONS,127,145,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_rigid_NUM_LEVELS,53,145,28,12,ES_AUTOHSCROLL
+    LTEXT           "wNor:",IDC_STATIC,165,135,20,8
+    EDITTEXT        IDC_EDIT_PAIRWISE_NON_RIGID_WEIGHT_NORMAL,191,132,28,12,ES_AUTOHSCROLL
+    CONTROL         "memory",IDC_CHECK_MEMORY_EFFICIENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,228,41,10
+    LTEXT           "&rad_sup:",IDC_STATIC,170,214,30,8
+    EDITTEXT        IDC_EDIT_NON_RIGID_PATCH_SUPPORT_REGION_SIZE,200,212,24,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "NRAlignment.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "NRAlignment.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 553
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "NRAlignment\n\nNRAlignment\n\n\nNRAlignment.Document\nNRAlignment.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "NRAlignment"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\NRAlignment.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
