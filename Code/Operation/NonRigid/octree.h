@@ -28,6 +28,7 @@ public:
         children[i] = NULL;
       }
     }
+	printf(".\n");
   }
   Node3D* children[8];
 };
@@ -60,6 +61,7 @@ public:
     int cell_z_id) const;
   void CollectAllLeafs(vector<int> *cell_x_ids, vector<int> *cell_y_ids,
     vector<int> *cell_z_ids) const;
+
   Node3D *root;
 
   Vector3f left_corner;

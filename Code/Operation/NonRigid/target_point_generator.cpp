@@ -10,6 +10,7 @@ void TargetPointGenerator::Compute(const vector<ShapeContainer> &input_scans,
   const RefSurfPara &para,
   vector<Vertex> *foot_points,
   vector<vector<int>> *foot_point_indices) {
+  printf("starting octree.\n");
   // Generate the octree
   Octree3D* octree = GenerateOctree(input_scans, para.gridRes);
   if (octree == NULL)
@@ -26,15 +27,16 @@ void TargetPointGenerator::Compute(const vector<ShapeContainer> &input_scans,
       (*foot_point_indices)[scan_id][point_id] = -1;
     }
   }
-
+  
+  printf("starting octree 1.\n");
   // Obtain all leaf nodes
   vector<int> leaf_cell_x_ids, leaf_cell_y_ids, leaf_cell_z_ids;
   octree->CollectAllLeafs(&leaf_cell_x_ids, &leaf_cell_y_ids, &leaf_cell_z_ids);
-
+  
   int max_cell_coord = (1<<octree->max_depth)-1;
 
   foot_points->clear();
-
+  
   // For each leaf cell, perform clustering in its neighbors
   for (unsigned leaf_id = 0; leaf_id < leaf_cell_x_ids.size(); ++leaf_id) {
     
@@ -177,7 +179,6 @@ void TargetPointGenerator::Compute(const vector<ShapeContainer> &input_scans,
       foot_points->push_back(new_ft);
     }
   }
-
   // release octree
   delete octree;
   printf("    The reference surface has %d foot points.\n", foot_points->size());
