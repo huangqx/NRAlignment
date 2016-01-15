@@ -43,6 +43,13 @@ void FPSClustering(const vector<Vector3f> &point_normals,
   const double &weight_color,
   const double &cluster_size,
   vector<vector<int>> *clusters) {
+  if (point_normals.size() == 1) {
+    vector<int> cluster;
+	cluster.resize(1);
+	cluster[0] = 1;
+	clusters->push_back(cluster);
+	return;
+  }
   // Store the point cluster map
   vector<double> point_cluster_dis;
   vector<int> point_cluster_ids;
